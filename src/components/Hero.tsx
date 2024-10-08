@@ -4,8 +4,8 @@ import { Spotlight } from "./ui/Spotlight";
 import { FloatingNav } from "./ui/FloatingNavbar";
 
 import { TextGenerateEffect } from "./ui/text-generate-effect";
-import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
-import { gridItems, navItems } from "../../data";
+import { navItems } from "../../data";
+import AboutMeGrid from "./AboutMeGrid";
 
 
 
@@ -30,21 +30,6 @@ const Hero = () => {
           </div>
          
           </div>
-          <BentoGrid>
-            {gridItems.map((item, id) => (
-              <BentoGridItem 
-                key={id} 
-                id={id}
-                title={item.title}
-                description={item.description}
-                className={item.className}
-                img={item.img}
-                imgClassName={item.imgClassName}
-                titleClassName={item.titleClassName}
-
-                />
-            ))}
-          </BentoGrid>
           
       </div>
       

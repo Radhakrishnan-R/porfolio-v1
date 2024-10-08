@@ -4,6 +4,8 @@ export const navItems = [
     { name: "Testimonials", link: "#testimonials" },
     { name: "Contact", link: "#contact" },
   ];
+
+  export const skills = ["Reactjs", "Nextjs", "Javascript", "Node.js", "Express.js", "PostgresSql", "SQL"];
   
   export const gridItems = [
     {
