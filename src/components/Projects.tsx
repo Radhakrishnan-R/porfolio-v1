@@ -8,17 +8,17 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20">
         <h2 className="text-white text-4xl text-center font-bold">A Small Section of my recent projects</h2>
-        <div className="w-full flex items-center border-2 py-10 justify-around">
+        <div className="w-full flex flex-wrap items-center border-2 mt-20 justify-around">
             {projects.slice(0,2).map((item) => (
                  <PinContainer
                  title={item.title}
                  href={item.link}
                  key={item.id}
-                 className="border-2 w-[30rem]"
+                 className="border-2 w-[30rem] max-sm:w-[320px]"
                >
-                <div className="">
-                    <h2 className="">{item.title}</h2>
-                    <p className="">{item.des}</p>
+                <div className="flex flex-col gap-4">
+                    <h2 className="text-xl text-white">{item.title}</h2>
+                    <p className="text-sm text-slate-100">{item.des}</p>
                     <div className="">
                         <img 
                         src={item.img}
