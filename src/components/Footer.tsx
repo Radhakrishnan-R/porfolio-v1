@@ -2,6 +2,7 @@ import { CiLocationArrow1 } from "react-icons/ci";
 import MagicButton from "./ui/MagicButton";
 import { socialMedia } from "../../data";
 import Image from "next/image";
+import Link from "next/link";
 
 
 
@@ -17,10 +18,10 @@ const Footer = () => {
             </div>
         </div>
         <div className="my-10 flex justify-between items-center">
-            <p className="text-lg text-white">Copyright `&#169;` {new Date().getFullYear()} Radhakrishnan R</p>
+            <p className="text-lg text-white">Copyright &#169; {new Date().getFullYear()} Radhakrishnan R</p>
             <div className="flex justify-between gap-2 items-center">
-                {socialMedia.map(({id, img}) => (
-                    <div key={id} className="w-10 h-10 rounded-xl p-2 border-[1px] border-slate-500 ">
+                {socialMedia.map(({id, img, link}) => (
+                    <Link href={link} target="_blank" key={id} className="w-10 h-10 rounded-xl p-2 border-[1px] border-slate-500 ">
                         <Image 
                             src={img}
                             alt={img}
@@ -28,7 +29,7 @@ const Footer = () => {
                             width={40}
                             height={40}
                         />
-                    </div>
+                    </Link>
                 ))}
             </div>
         </div>

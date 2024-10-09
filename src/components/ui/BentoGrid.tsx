@@ -97,7 +97,7 @@ export const BentoGridItem = ({
       
       <div className="group-hover/bento:translate-x-2 transition duration-200">
 
-          <div className={`${id === 1 && 'justify-start'} p-4 flex flex-col relative md:bottom-10 md:left-5 z-10`}>
+          <div className={`${id === 1 && 'py-5 px-3 justify-start'} p-4 flex flex-col -top-2.5 relative md:bottom-10 md:left-5 z-10`}>
       <div className={`font-sans md:text-2xl text-lg lg:max-w-[400px] max-w-[300px] font-bold text-neutral-600 dark:text-neutral-200  ${titleClassName}`}>
           {title}
         </div>

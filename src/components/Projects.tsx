@@ -6,8 +6,8 @@ import { projects } from "../../data";
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-28 ">
-        <h2 className="text-white text-4xl text-center mb-18 font-bold">A Small Section of my recent projects</h2>
+    <section id="projects" className="py-28 max-sm:pb-0">
+        <h2 className="text-white text-4xl text-center mb-18 font-bold">A Small Section of my <span className="text-purple" >recent projects</span></h2>
         <div className="w-full flex flex-wrap items-center my-20 gap-10 justify-center lg:justify-around">
             {projects.slice(0,2).map((item) => (
                  <PinContainer

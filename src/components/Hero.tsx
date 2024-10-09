@@ -10,14 +10,14 @@ import { TextGenerateEffect } from "./ui/text-generate-effect";
 
 const Hero = () => {
   return (
-    <div className="pt-36">
+    <div id="hero" className="sm:pt-36 pt-20">
       
       <div>
        <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white" />
        <Spotlight className="top:20 left-full h-[80vh] w-[74vw]" fill="purple" />
        <Spotlight className="top:40 left-80 w-[50vw]" fill="blue" />
 
-       <div className="h-[50rem] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.03] relative flex pt-10 justify-center">
+       <div className="h-[50rem] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.03] relative flex sm:pt-10 justify-center">
           {/* Radial gradient for the container to give a faded look */}
           <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
           
