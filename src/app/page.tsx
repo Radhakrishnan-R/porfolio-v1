@@ -2,6 +2,7 @@ import Image from "next/image";
 import Hero from "../components/Hero";
 import AboutMeGrid from "@/components/AboutMeGrid";
 import Projects from "@/components/Projects";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <Hero />
         <AboutMeGrid />
         <Projects />
+        <Footer />
       </div>
       
     </main>

@@ -6,24 +6,38 @@ import { projects } from "../../data";
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20">
+    <section id="Projects" className="py-20">
         <h2 className="text-white text-4xl text-center font-bold">A Small Section of my recent projects</h2>
-        <div className="w-full flex flex-wrap items-center border-2 mt-20 justify-around">
+        <div className="w-full flex flex-wrap items-center my-20 gap-10 justify-center lg:justify-around">
             {projects.slice(0,2).map((item) => (
                  <PinContainer
                  title={item.title}
                  href={item.link}
                  key={item.id}
-                 className="border-2 w-[30rem] max-sm:w-[320px]"
+                 className="lg:w-[26rem] xl:w-[30rem] w-[320px] md:w-[380px]"
+                 containerClassName="my-10"
+                 
                >
                 <div className="flex flex-col gap-4">
                     <h2 className="text-xl text-white">{item.title}</h2>
+                    <div className="flex flex-wrap">
+                      {item.iconLists.map((item, i) => (
+                        <div key={i} className="w-8 h-8 rounded-full border-[1px] border-slate-500 p-2">
+                        <img 
+                          src={item}
+                          alt={item}
+                          className="w-full h-full"
+                        />
+                        </div>
+                        
+                      ))}
+                    </div>
                     <p className="text-sm text-slate-100">{item.des}</p>
                     <div className="">
                         <img 
                         src={item.img}
                         alt={item.title}
-                        className=""
+                        className="w-full object-contain object-center"
                         />
                     </div>
                 </div>

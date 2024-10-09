@@ -26,7 +26,7 @@ const Hero = () => {
             <h2 className="text-white uppercase tracking-widest">Harnessing the power of web tools</h2>
             <h1><TextGenerateEffect duration={1} words="Creating Experiences That Are Sharp, Sleek, and Unforgettable" /></h1>
             <h3 className="text-white text-lg mt-10 tracking-wider">Hi I'm Radhakrishnan, a Full-stack developer based in Bangalore.</h3>
-            <MagicButton text="Donwload my Resume" icon={<CiLocationArrow1 />} iconPosition="right" className="mt-10"/>
+            <MagicButton href="/projects" text="See my works" icon={<CiLocationArrow1 />} iconPosition="right" className="mt-10"/>
           </div>
          
           </div>
