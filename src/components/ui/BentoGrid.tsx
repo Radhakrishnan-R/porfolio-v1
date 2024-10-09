@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils";
 import Bgradient from "../Bgradient";
-import { Globe, World } from "./Globe";
 import {GlobeDemo} from "../GlobeDemo";
 import { InfiniteMovingCards } from "./InfiniteMovingCard";
 import { skills } from "../../../data";

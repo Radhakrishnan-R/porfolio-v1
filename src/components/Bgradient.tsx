@@ -5,7 +5,7 @@ import { BackgroundGradientAnimation } from "./ui/BackgroundGradientAnimation";
 const Bgradient = () => {
   return (
     <div>
-        <BackgroundGradientAnimation children="hello" containerClassName="w-full absolute" />
+        <BackgroundGradientAnimation containerClassName="w-full absolute" />
     </div>
   )
 }

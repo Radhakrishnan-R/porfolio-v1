@@ -5,7 +5,6 @@ import { FloatingNav } from "./ui/FloatingNavbar";
 
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { navItems } from "../../data";
-import AboutMeGrid from "./AboutMeGrid";
 
 
 
@@ -25,7 +24,7 @@ const Hero = () => {
           <div className="w-full text-center max-w-3xl ">
             <h2 className="text-white uppercase tracking-widest">Harnessing the power of web tools</h2>
             <h1><TextGenerateEffect duration={1} words="Creating Experiences That Are Sharp, Sleek, and Unforgettable" /></h1>
-            <h3 className="text-white text-lg mt-10 tracking-wider">Hi I'm Radhakrishnan, a Full-stack developer based in Bangalore.</h3>
+            <h3 className="text-white text-lg mt-10 tracking-wider">{`Hi I'm Radhakrishnan, a Full-stack developer based in Bangalore.`}</h3>
             <MagicButton href="/projects" text="See my works" icon={<CiLocationArrow1 />} iconPosition="right" className="mt-10"/>
           </div>
          
