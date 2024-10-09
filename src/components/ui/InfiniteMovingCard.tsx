@@ -69,7 +69,7 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 overflow-hidden",
+        "scroller relative top-2 mb-3 z-20 cursor-pointer overflow-hidden",
         className
       )}
     >
@@ -83,7 +83,7 @@ export const InfiniteMovingCards = ({
       >
         {skills.map((item, idx) => (
           <li
-            className="text-white border-2 flex-shrink-0 px-4 py-2"
+            className="text-white-200 border-[1px] rounded-xl border-slate-300 flex-shrink-0 px-4 py-2"
             key={idx}
           >
             {item}

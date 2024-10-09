@@ -1,17 +1,17 @@
 import { CiLocationArrow1 } from "react-icons/ci";
 import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
-import { FloatingNav } from "./ui/FloatingNavbar";
+
 
 import { TextGenerateEffect } from "./ui/text-generate-effect";
-import { navItems } from "../../data";
+
 
 
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
-      <FloatingNav navItems={navItems} />
+    <div className="pt-36">
+      
       <div>
        <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white" />
        <Spotlight className="top:20 left-full h-[80vh] w-[74vw]" fill="purple" />
@@ -25,7 +25,7 @@ const Hero = () => {
             <h2 className="text-white uppercase tracking-widest">Harnessing the power of web tools</h2>
             <h1><TextGenerateEffect duration={1} words="Creating Experiences That Are Sharp, Sleek, and Unforgettable" /></h1>
             <h3 className="text-white text-lg mt-10 tracking-wider">{`Hi I'm Radhakrishnan, a Full-stack developer based in Bangalore.`}</h3>
-            <MagicButton href="/projects" text="See my works" icon={<CiLocationArrow1 />} iconPosition="right" className="mt-10"/>
+            <MagicButton href="/#projects" text="See my works" icon={<CiLocationArrow1 />} iconPosition="right" className="mt-10"/>
           </div>
          
           </div>
