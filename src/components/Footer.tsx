@@ -18,7 +18,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="my-10 flex justify-between items-center">
-            <p className="text-lg text-white">Copyright &#169; {new Date().getFullYear()} Radhakrishnan R</p>
+            <p className="text-sm lg:text-lg text-white">Copyright &#169; {new Date().getFullYear()} Radhakrishnan R</p>
             <div className="flex justify-between gap-2 items-center">
                 {socialMedia.map(({id, img, link}) => (
                     <Link href={link} target="_blank" key={id} className="w-10 h-10 rounded-xl p-2 border-[1px] border-slate-500 ">

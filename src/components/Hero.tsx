@@ -1,3 +1,5 @@
+"use client";
+
 import { CiLocationArrow1 } from "react-icons/ci";
 import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
@@ -10,7 +12,7 @@ import { TextGenerateEffect } from "./ui/text-generate-effect";
 
 const Hero = () => {
   return (
-    <div id="hero" className="sm:pt-36 pt-20">
+    <div id="home" className="sm:pt-30 pt-20">
       
       <div>
        <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white" />
