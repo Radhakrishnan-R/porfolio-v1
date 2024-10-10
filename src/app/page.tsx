@@ -11,8 +11,15 @@ export default function Home() {
       <div className="w-full max-w-7xl">
       <FloatingNav navItems={navItems} />
         <Hero />
-        <AboutMeGrid />
-        <Projects />
+        <div className="flex flex-col-reverse md:flex-col">
+          <div>
+            <h2 className="text-white text-4xl md:hidden text-center my-[40px] font-bold">Things About<span className="text-purple" > Me</span></h2>
+            <AboutMeGrid />
+          </div>
+        
+          <Projects />
+        </div>
+        
         <Footer />
       </div>
       
